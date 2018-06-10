@@ -28,7 +28,6 @@ import { trigger, style, transition, animate,
 })
 export class PostsComponent implements OnInit {
 
-	users$: Object;
 	posts$: Object;
 
   constructor(private data: DataService) { 
@@ -38,8 +37,5 @@ export class PostsComponent implements OnInit {
   ngOnInit() {
   	this.data.getPosts().subscribe(
   		data => this.posts$ = data
-  	this.data.getUsers(this.user$).subscribe(
-  		data => this.posts$ = data
-  }
 
 }
