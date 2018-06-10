@@ -37,5 +37,7 @@ export class PostsComponent implements OnInit {
   ngOnInit() {
   	this.data.getPosts().subscribe(
   		data => this.posts$ = data
+  	)
+  }
 
 }
