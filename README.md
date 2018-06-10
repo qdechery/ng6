@@ -25,3 +25,11 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## GH Pages
+https://github.com/angular-schule/angular-cli-ghpages/issues/37
+Need to deploy with 
+ng build --prod --base-href=/ng6/ 
+and
+ngh --dir dist/ng6
+because angular6 broken ghpages. 
